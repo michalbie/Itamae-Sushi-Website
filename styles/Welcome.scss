@@ -1,0 +1,83 @@
+section {
+	position: relative;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#welcome-title-background {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/home-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.welcome-title-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	z-index: 3;
+	animation: fadeIn ease 1.5s;
+
+	@keyframes fadeIn {
+		0% {
+			margin-left: -1em;
+			opacity: 0%;
+		}
+		100% {
+			margin-left: 0px;
+			opacity: 100%;
+		}
+	}
+
+	.h1-title {
+		color: #dddddd;
+		font-size: 5em;
+	}
+
+	.description {
+		color: #ffffff;
+		font-size: 2em;
+		width: 70vw;
+		text-align: justify;
+	}
+}
+
+.arrow-container {
+	position: absolute;
+	width: 4em;
+	height: 4em;
+	z-index: 4;
+	bottom: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.arrow-container:hover {
+	cursor: pointer;
+}
+
+.arrow-down {
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	z-index: 3;
+	clip-path: polygon(49% 85%, 84% 61%, 100% 61%, 49% 100%, 1% 59%, 18% 59%);
+
+	animation: bounce;
+	animation-duration: 2s;
+}
+
+.content-img {
+	align-self: flex-end;
+	position: absolute;
+}

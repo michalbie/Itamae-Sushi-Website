@@ -1,74 +1,75 @@
 $font-color: #ffffff;
 
 header {
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	justify-content: space-between;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	z-index: 10;
-	width: 100%;
-	position: fixed;
-	background-color: rgba($color: #acacac, $alpha: 0.4);
-	transition: top 0.5s ease-out;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    background-color: rgba($color: #acacac, $alpha: 0.4);
+    transition: top 0.5s ease-out;
 }
 
 ul {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	list-style-type: none;
-	color: $font-color;
-	font-size: 1.1em;
-	margin-right: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    color: $font-color;
+    font-size: 1.1em;
+    margin-right: 0.5em;
 
-	li {
-		padding: 0em 1em 0em 1em;
-		height: 60%;
-		display: flex;
-		align-items: center;
-	}
+    li {
+        padding: 0em 1em 0em 1em;
+        height: 60%;
+        display: flex;
+        align-items: center;
+    }
 
-	li:hover {
-		cursor: pointer;
-		animation: hoverButton ease 0.5s;
-		animation-fill-mode: forwards;
+    li:hover {
+        cursor: pointer;
+        animation: hoverButton ease 0.5s;
+        animation-fill-mode: forwards;
 
-		@keyframes hoverButton {
-			0% {
-				background-color: transparent;
-				border-radius: 0px;
-			}
-			100% {
-				background-color: rgba($color: #ffffff, $alpha: 0.1);
-				border-radius: 2em;
-			}
-		}
-	}
+        @keyframes hoverButton {
+            0% {
+                background-color: transparent;
+                border-radius: 0px;
+            }
+            100% {
+                background-color: rgba($color: #ffffff, $alpha: 0.1);
+                border-radius: 2em;
+            }
+        }
+    }
 }
 
 #logo-section {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-left: 0.5em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.5em;
 
-	#logo-img {
-		position: relative;
-		width: 8em;
-		margin-left: -1.5em;
-		height: auto;
-	}
+    #logo-img {
+        position: relative;
+        width: 8em;
+        margin-left: -1.5em;
+        height: auto;
+    }
 
-	#logo-title {
-		position: absolute;
-		font-size: 1.2em;
-		width: 6em;
-		height: auto;
-		color: $font-color;
-		letter-spacing: 0.2em;
-		left: 4em;
-	}
+    #logo-title {
+        position: absolute;
+        font-family: "Noto Sans TC";
+        font-size: 1.2em;
+        width: 6em;
+        height: auto;
+        color: $font-color;
+        letter-spacing: 0.2em;
+        left: 4em;
+    }
 }

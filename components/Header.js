@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 export default function Header() {
     const [topOffset, setTopOffset] = useState(0);
@@ -31,10 +32,18 @@ export default function Header() {
                 <h2 id="logo-title">ITAMAE</h2>
             </div>
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Delivery</li>
-                <li>Contact</li>
+                <ScrollIntoView className="scroll-view-wrapper" selector="#welcome-section">
+                    <li>Home</li>
+                </ScrollIntoView>
+                <ScrollIntoView className="scroll-view-wrapper" selector="#menu-section">
+                    <li>Menu</li>
+                </ScrollIntoView>
+                <ScrollIntoView className="scroll-view-wrapper">
+                    <li>Delivery</li>
+                </ScrollIntoView>
+                <ScrollIntoView className="scroll-view-wrapper">
+                    <li>Contact</li>
+                </ScrollIntoView>
             </ul>
         </header>
     );

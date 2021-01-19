@@ -2,7 +2,7 @@ import ScrollIntoView from "react-scroll-into-view";
 
 export default function WelcomeSection(props) {
     return (
-        <section>
+        <section id="welcome-section">
             <div id="welcome-title-background"></div>
             <div className="welcome-title-content">
                 <h1 className="h1-title">Welcome to the Itamae world</h1>

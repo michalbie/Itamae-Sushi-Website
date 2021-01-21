@@ -20,12 +20,14 @@ $content-padding: 3em;
 
         h1 {
             font-size: 5em;
+            font-family: "Courgette";
         }
 
         > p {
             z-index: 1;
             font-size: 1.6em;
             text-align: justify;
+            padding-top: 1em;
         }
 
         #delivery-section-image {

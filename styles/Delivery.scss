@@ -1,0 +1,45 @@
+$content-padding: 3em;
+
+#delivery-section {
+    position: relative;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8)), url("/assets/delivery-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #delivery-content {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        padding: $content-padding;
+        position: relative;
+
+        h1 {
+            font-size: 5em;
+        }
+
+        > p {
+            z-index: 1;
+            font-size: 1.6em;
+            text-align: justify;
+        }
+
+        #delivery-section-image {
+            width: 100%;
+            height: auto;
+            margin-top: -6em;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            margin-left: -2 * $content-padding;
+        }
+
+        #delivery-pricing-button {
+            margin-top: -9em;
+            z-index: 2;
+        }
+    }
+}

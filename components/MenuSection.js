@@ -35,7 +35,7 @@ export default function MenuSection() {
                     Each of the dishes is carefully thought out, and their complexity makes them appeal to even the most demanding guests. We invite
                     you to taste.
                 </p>
-                <button id="download-button">Download menu</button>
+                <button className="big-button">Download menu</button>
             </section>
         </section>
     );

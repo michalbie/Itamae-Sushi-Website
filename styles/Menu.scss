@@ -40,6 +40,10 @@
             align-items: center;
         }
     }
+
+    .menu-option:hover {
+        cursor: pointer;
+    }
 }
 
 #menu-description-container {
@@ -47,6 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     padding-top: 7em;
     padding-left: 4em;
     padding-right: 4em;
@@ -66,39 +71,41 @@
         padding-top: 1em;
         text-align: justify;
     }
+}
 
-    #download-button {
-        font-size: 1.1em;
-        color: white;
-        font-family: "Courgette";
-        background-color: #a72e2e;
-        padding: 1.5em 10em 1.5em 10em;
-        border-radius: 2em;
-        margin-top: 5em;
+.big-button {
+    font-size: 1.1em;
+    color: white;
+    font-family: "Courgette";
+    background-color: #a72e2e;
+    padding: 1.5em 10em 1.5em 10em;
+    border-radius: 2em;
+    margin-top: 5em;
+    border: none;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 
-        animation: onLeaveHover 0.3s ease;
-        @keyframes onLeaveHover {
-            from {
-                transform: scale(0.98);
-            }
-            to {
-                transform: scale(1);
-            }
+    animation: onLeaveHover 0.3s ease;
+    @keyframes onLeaveHover {
+        from {
+            transform: scale(0.98);
+        }
+        to {
+            transform: scale(1);
         }
     }
+}
 
-    #download-button:hover {
-        animation: hoverButtonDownload 0.2s ease;
-        animation-fill-mode: forwards;
-        cursor: pointer;
+.big-button:hover {
+    animation: hoverButtonDownload 0.2s ease;
+    animation-fill-mode: forwards;
+    cursor: pointer;
 
-        @keyframes hoverButtonDownload {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(0.98);
-            }
+    @keyframes hoverButtonDownload {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.98);
         }
     }
 }

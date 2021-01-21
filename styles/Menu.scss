@@ -18,15 +18,18 @@
 
     .menu-option {
         position: relative;
+        overflow: hidden;
+        border-radius: 1em;
 
         img {
             width: 100%;
             height: auto;
-            border-radius: 1em;
-            border: 2px solid black;
+
             filter: brightness(49%);
             -webkit-filter: brightness(45%);
             -moz-filter: brightness(45%);
+            border-radius: 1em;
+            transition: transform 0.5s ease;
         }
 
         h2 {
@@ -43,6 +46,11 @@
 
     .menu-option:hover {
         cursor: pointer;
+        border-radius: 1em;
+
+        img {
+            transform: scale(1.1);
+        }
     }
 }
 

@@ -1,0 +1,48 @@
+#contact-section {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1)), url("/assets/contact-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+
+    #logo-section {
+        width: 100%;
+        margin: 0;
+        flex-grow: 4;
+        padding-top: 10em;
+
+        #contact-logo-container {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            #contact-logo {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    #contact-informations-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        color: white;
+        flex-grow: 1;
+        padding-top: 5em;
+
+        .contact-element-container {
+            padding: 2em;
+            width: 20em;
+            text-align: center;
+
+            h1 {
+                font-size: 1.7em;
+                color: #a72e2e;
+            }
+        }
+    }
+}

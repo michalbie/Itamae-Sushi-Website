@@ -41,7 +41,7 @@ export default function Header() {
                 <ScrollIntoView className="scroll-view-wrapper" selector="#delivery-section">
                     <li>Delivery</li>
                 </ScrollIntoView>
-                <ScrollIntoView className="scroll-view-wrapper">
+                <ScrollIntoView className="scroll-view-wrapper" selector="#contact-section">
                     <li>Contact</li>
                 </ScrollIntoView>
             </ul>

@@ -42,7 +42,7 @@ export default function DeliverySection() {
                 <p>
                     Orient flavors in your house? It's possible with us! Just call <strong style={{ color: "#a72e2e" }}>504 580 580</strong> and we'll
                     take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by
-                    youself. Don't hesitate and call us today. Delicious sushi awaits!
+                    yourself. Don't hesitate and call us today. Delicious sushi awaits!
                 </p>
                 <img id="delivery-section-image" src="assets/delivery-img.png" />
                 <button className="big-button" id="delivery-pricing-button">

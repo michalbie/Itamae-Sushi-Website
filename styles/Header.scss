@@ -36,6 +36,25 @@ ul {
         }
     }
 
+    > li {
+        display: flex;
+        align-items: center;
+    }
+
+    #flag-container {
+        display: flex;
+        align-items: center;
+        img {
+            width: 2em;
+            height: auto;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(0.95);
+        }
+    }
+
     .scroll-view-wrapper:hover {
         cursor: pointer;
         animation: hoverButton ease 0.5s;

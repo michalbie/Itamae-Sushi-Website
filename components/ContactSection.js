@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 
 export default function ContactSection() {
+    const languageContext = useContext(LanguageContext);
+
     return (
         <section id="contact-section">
             <section id="logo-section">
@@ -10,16 +13,16 @@ export default function ContactSection() {
             </section>
             <section id="contact-informations-container">
                 <div className="contact-element-container">
-                    <h1>Call us</h1>
-                    <h3>Restaurant: 504580500</h3>
-                    <h3>Partnership: 509820053</h3>
+                    <h1>{languageContext.languageData["call-us"]}</h1>
+                    <h3>{languageContext.languageData["restaurant"]}: 504580500</h3>
+                    <h3>{languageContext.languageData["partnership"]}: 509820053</h3>
                 </div>
                 <div className="contact-element-container">
-                    <h1>Write to us</h1>
+                    <h1>{languageContext.languageData["write-to-us"]}</h1>
                     <h3>Email: itamae.bielsko@gmail.com</h3>
                 </div>
                 <div className="contact-element-container">
-                    <h1>Stay on top</h1>
+                    <h1>{languageContext.languageData["stay-on-top"]}</h1>
                     <h3>Facebook</h3>
                     <h3>Instagram</h3>
                     <h3>TripAdvisor</h3>

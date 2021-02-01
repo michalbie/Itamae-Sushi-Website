@@ -25,12 +25,15 @@ section {
     flex-direction: column;
     width: 80%;
     z-index: 3;
-    animation: fadeLeft ease 1.3s;
+    animation: ownFade ease 1.3s;
 
-    @keyframes fadeLeft {
+    @keyframes ownFade {
         0% {
             margin-left: -1.5em;
             opacity: 0%;
+        }
+        80% {
+            opacity: 70%;
         }
         100% {
             margin-left: 0px;

@@ -1,15 +1,16 @@
 import ScrollIntoView from "react-scroll-into-view";
+import { useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 
 export default function WelcomeSection(props) {
+    const languageContext = useContext(LanguageContext);
+
     return (
         <section id="welcome-section">
             <div id="welcome-title-background"></div>
             <div className="welcome-title-content">
-                <h1 className="h1-title">Welcome to the Itamae world</h1>
-                <p className="description">
-                    Immerse yourself in the richness of Asian cuisine flavors that our restaurants offer. Set off on an adventure to the world of
-                    Itamae and discover a completely new experience.
-                </p>
+                <h1 className="h1-title">{languageContext.languageData["welcome-title"]}</h1>
+                <p className="description">{languageContext.languageData["welcome-description"]}</p>
             </div>
             <ScrollIntoView selector="#menu-section">
                 <div className="arrow-container">

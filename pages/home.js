@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import WelcomeSection from "../components/WelcomeSection";
 import MenuSection from "../components/MenuSection";
-import LocationSection from "../components/LocationSection";
 import DeliverySection from "../components/DeliverySection";
 import ContactSection from "../components/ContactSection";
 import { useInView } from "react-intersection-observer";
@@ -10,7 +9,7 @@ import languagesJSON from "../public/language.json";
 import { LanguageContext } from "../components/LanguageContext";
 
 export default function Home() {
-    const [language, setLanguage] = useState("english");
+    const [language, setLanguage] = useState("polish");
     const [languageData, setLanguageData] = useState(languagesJSON[language]);
 
     useEffect(() => {
@@ -18,7 +17,7 @@ export default function Home() {
     }, [language]);
 
     return (
-        <LanguageContext.Provider value={languageData}>
+        <LanguageContext.Provider value={{ languageData, setLanguage }}>
             <div id="container">
                 <Header />
                 <WelcomeSection />

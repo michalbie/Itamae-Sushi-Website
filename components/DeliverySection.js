@@ -1,4 +1,6 @@
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
+import { useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 
 const exampleMapStyles = [
     {
@@ -35,18 +37,16 @@ const Map = withScriptjs(
 );
 
 export default function DeliverySection() {
+    const languageContext = useContext(LanguageContext);
+
     return (
         <section id="delivery-section">
             <section id="delivery-content">
-                <h1>Delivery to your door</h1>
-                <p>
-                    Orient flavors in your house? It's possible with us! Just call <strong style={{ color: "#a72e2e" }}>504 580 580</strong> and we'll
-                    take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by
-                    yourself. Don't hesitate and call us today. Delicious sushi awaits!
-                </p>
+                <h1>{languageContext.languageData["delivery-title"]}</h1>
+                <p>{languageContext.languageData["delivery-description"]}</p>
                 <img id="delivery-section-image" src="assets/delivery-img.png" />
                 <button className="big-button" id="delivery-pricing-button">
-                    Show pricing
+                    {languageContext.languageData.buttons["show-pricing"]}
                 </button>
             </section>
             <Map

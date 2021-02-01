@@ -23,7 +23,21 @@ export default function Header() {
         window.addEventListener("scroll", onScroll);
     };
 
+    const switchLanguages = () => {
+        console.log(document.getElementById("flag").currentLanguage);
+        if (document.getElementById("flag").currentLanguage == "polish") {
+            document.getElementById("flag").currentLanguage = "english";
+            document.getElementById("flag").src = "/assets/english-flag.jpg";
+            languageContext.setLanguage("english");
+        } else {
+            document.getElementById("flag").currentLanguage = "polish";
+            document.getElementById("flag").src = "/assets/polish-flag.jpg";
+            languageContext.setLanguage("polish");
+        }
+    };
+
     useEffect(() => {
+        document.getElementById("flag").currentLanguage = "polish";
         addHeaderBehaviour();
     }, []);
 
@@ -35,17 +49,22 @@ export default function Header() {
             </div>
             <ul>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#welcome-section">
-                    <li>{languageContext.buttons["home"]}</li>
+                    <li>{languageContext.languageData.buttons["home"]}</li>
                 </ScrollIntoView>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#menu-section">
-                    <li>Menu</li>
+                    <li>{languageContext.languageData.buttons["menu"]}</li>
                 </ScrollIntoView>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#delivery-section">
-                    <li>Delivery</li>
+                    <li>{languageContext.languageData.buttons["delivery"]}</li>
                 </ScrollIntoView>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#contact-section">
-                    <li>Contact</li>
+                    <li>{languageContext.languageData.buttons["contact"]}</li>
                 </ScrollIntoView>
+                <li>
+                    <div id="flag-container" onClick={switchLanguages}>
+                        <img currentLanguage="polish" id="flag" src="/assets/polish-flag.jpg" />
+                    </div>
+                </li>
             </ul>
         </header>
     );

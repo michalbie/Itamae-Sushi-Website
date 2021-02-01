@@ -11,18 +11,18 @@
         "delivery-description": "Orient flavors in your house? It's possible with us! Just call 504 580 580 and we'll take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by yourself. Don't hesitate and call us today. Delicious sushi awaits!",
 
         "menu-options": {
-            "specials-option": "Specials",
-            "starters-option": "Starters",
-            "soups-option": "Soups",
-            "for-children-option": "For children",
-            "main-dishes-option": "Main dishes",
-            "salads-option": "Salads",
-            "sushi-sets-option": "Sushi sets",
-            "desserts-option": "Desserts",
-            "hot-drinks-option": "Hot drinks",
-            "cold-drinks-option": "Cold drinks",
-            "wines-option": "Wines",
-            "alcohol-option": "Alcohol"
+            "specials": "Specials",
+            "starters": "Starters",
+            "soups": "Soups",
+            "for-children": "For children",
+            "main-dishes": "Main dishes",
+            "salads": "Salads",
+            "sushi-sets": "Sushi sets",
+            "desserts": "Desserts",
+            "hot-drinks": "Hot drinks",
+            "cold-drinks": "Cold drinks",
+            "wines": "Wines",
+            "alcohol": "Alcohol"
         },
 
         "buttons": {
@@ -30,7 +30,7 @@
             "menu": "Menu",
             "delivery": "Delivery",
             "contact": "Contact",
-            "download-menu": "Donwload menu",
+            "download-menu": "Download menu",
             "show-pricing": "Show pricing"
         },
 
@@ -42,29 +42,29 @@
     },
 
     "polish": {
-        "welcome-title": "Welcome to the Itamae world",
+        "welcome-title": "Witaj w świecie Itamae",
 
-        "welcome-description": "Immerse yourself in the richness of Asian cuisine flavors that our restaurants offer. Set off on an adventure to the world of Itamae and discover a completely new experience.",
+        "welcome-description": "Zanurz się w bogactwie smaków kuchni azjatyckiej, które oferują nasze restauracje. Wyrusz w przygodę do świata Itamae i odkryj zupełnie nowe doświadczenia.",
 
-        "menu-description": "Sushi is our specialty. Each roll is made of carefully selected ingredients of the highest quality with attention to the smallest detail, and the experience and precision of our sushimasters translate into the final receipt of the whole. However, our cuisine is not only sushi. Inspired by Asian culture, we have created compositions that delight with the richness of flavors and colors. Each of the dishes is carefully thought out, and their complexity makes them appeal to even the most demanding guests. We invite you to taste.",
+        "menu-description": "Sushi to nasza specjalność. Każda rolka wykonana jest ze starannie dobranych składników najwyższej jakości z dbałością o najmniejszy szczegół, a doświadczenie i precyzja naszych sushimasterów przekładają się na ostateczny odbiór całości. Jednak nasza kuchnia to nie tylko sushi. Inspirując się kulturą azjatycką, stworzyliśmy kompozycje, które zachwycają bogactwem smaków i kolorów. Każde z dań jest starannie przemyślane, a ich złożoność sprawia, że ​​przypadną do gustu nawet najbardziej wymagającym gościom.",
 
-        "delivery-title": "Delivery to your door",
+        "delivery-title": "Dostawa pod drzwi",
 
-        "delivery-description": "Orient flavors in your house? It's possible with us! Just call 504 580 580 and we'll take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by yourself. Don't hesitate and call us today. Delicious sushi awaits!",
+        "delivery-description": "Orientalne smaki w Twoim domu? Z nami to możliwe! Zadzwoń na numer 504 580 580, a my zajmiemy się wszystkim. Znajdź nasze restauracje na mapie i sprawdź ceny dostawy. Możesz także samodzielnie odebrać zamówienie. Nie wahaj się i zadzwoń do nas już dziś. Pyszne sushi czeka!",
 
         "menu-options": {
-            "specials-option": "Specials",
-            "starters-option": "Starters",
-            "soups-option": "Soups",
-            "for-children-option": "For children",
-            "main-dishes-option": "Main dishes",
-            "salads-option": "Salads",
-            "sushi-sets-option": "Sushi sets",
-            "desserts-option": "Desserts",
-            "hot-drinks-option": "Hot drinks",
-            "cold-drinks-option": "Cold drinks",
-            "wines-option": "Wines",
-            "alcohol-option": "Alcohol"
+            "specials": "Specjały",
+            "starters": "Startery",
+            "soups": "Zupy",
+            "for-children": "Dla dzieci",
+            "main-dishes": "Główne dania",
+            "salads": "Sałatki",
+            "sushi-sets": "Zestawy sushi",
+            "desserts": "Desery",
+            "hot-drinks": "Gorące napoje",
+            "cold-drinks": "Zimne napoje",
+            "wines": "Wina",
+            "alcohol": "Alkohol"
         },
 
         "buttons": {
@@ -72,14 +72,14 @@
             "menu": "Menu",
             "delivery": "Dostawa",
             "contact": "Kontakt",
-            "download-menu": "Donwload menu",
-            "show-pricing": "Show pricing"
+            "download-menu": "Pobierz menu",
+            "show-pricing": "Pokaż cennik"
         },
 
-        "call-us": "Call us",
-        "restaurant": "Restaurant",
-        "partnership": "Partnership",
-        "write-to-us": "Write to us",
-        "stay-on-top": "Stay on top"
+        "call-us": "Zadzwoń do nas",
+        "restaurant": "Restauracja",
+        "partnership": "Współpraca",
+        "write-to-us": "Napisz do nas",
+        "stay-on-top": "Bądź na bieżąco"
     }
 }

@@ -17,3 +17,5 @@ export default function Home() {
         </div>
     );
 }
+
+// TODO: Languages, menu from database, animations, responsiveness

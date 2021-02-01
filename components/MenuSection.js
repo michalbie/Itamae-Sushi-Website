@@ -5,26 +5,26 @@ export default function MenuSection() {
     return (
         <section id="menu-section">
             <section id="menu-options-container">
-                <MenuOption name="Specials" />
-                <MenuOption name="Starters" />
-                <MenuOption name="Soups" />
-                <MenuOption name="Maki Ten" />
-                <MenuOption name="Kami maki" />
-                <MenuOption name="Futomaki" />
-                <MenuOption name="Urumaki" />
-                <MenuOption name="Hosomaki" />
-                <MenuOption name="Gunkan Maki" />
-                <MenuOption name="Sashimi" />
-                <MenuOption name="Nigiri" />
-                <MenuOption name="For children" />
-                <MenuOption name="Main dishes" />
-                <MenuOption name="Salads" />
-                <MenuOption name="Sushi sets" />
-                <MenuOption name="Desserts" />
-                <MenuOption name="Hot drinks" />
-                <MenuOption name="Cold drinks" />
-                <MenuOption name="Wines" />
-                <MenuOption name="Alcohol" />
+                <MenuOption name="Specials" source="/assets/menu-options/specials.jpg" />
+                <MenuOption name="Starters" source="/assets/menu-options/starters.jpg" />
+                <MenuOption name="Soups" source="/assets/menu-options/soup.jpg" />
+                <MenuOption name="Maki Ten" source="/assets/menu-options/maki-ten.jpg" />
+                <MenuOption name="Kami maki" source="/assets/menu-options/kami-maki.jpg" />
+                <MenuOption name="Futomaki" source="/assets/menu-options/futomaki.jpg" />
+                <MenuOption name="Urumaki" source="/assets/menu-options/sushi-option.jpg" />
+                <MenuOption name="Hosomaki" source="/assets/menu-options/hosomaki.jpg" />
+                <MenuOption name="Gunkan Maki" source="/assets/menu-options/gunkan-maki.jpg" />
+                <MenuOption name="Sashimi" source="/assets/menu-options/sashimi.jpg" />
+                <MenuOption name="Nigiri" source="/assets/menu-options/nigiri.jpg" />
+                <MenuOption name="For children" source="/assets/menu-options/for-children.jpg" />
+                <MenuOption name="Main dishes" source="/assets/menu-options/main-dishes.jpg" />
+                <MenuOption name="Salads" source="/assets/menu-options/salads.jpg" />
+                <MenuOption name="Sushi sets" source="/assets/menu-options/sushi-sets.jpg" />
+                <MenuOption name="Desserts" source="/assets/menu-options/dessert.jpg" />
+                <MenuOption name="Hot drinks" source="/assets/menu-options/hot-drink.jpg" />
+                <MenuOption name="Cold drinks" source="/assets/menu-options/cold-drink.jpg" />
+                <MenuOption name="Wines" source="/assets/menu-options/wines.jpg" />
+                <MenuOption name="Alcohol" source="/assets/menu-options/alcohol.jpg" />
             </section>
             <section id="menu-description-container">
                 <h1 id="menu-title">Menu</h1>

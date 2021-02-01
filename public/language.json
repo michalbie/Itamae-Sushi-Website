@@ -1,0 +1,85 @@
+{
+    "english": {
+        "welcome-title": "Welcome to the Itamae world",
+
+        "welcome-description": "Immerse yourself in the richness of Asian cuisine flavors that our restaurants offer. Set off on an adventure to the world of Itamae and discover a completely new experience.",
+
+        "menu-description": "Sushi is our specialty. Each roll is made of carefully selected ingredients of the highest quality with attention to the smallest detail, and the experience and precision of our sushimasters translate into the final receipt of the whole. However, our cuisine is not only sushi. Inspired by Asian culture, we have created compositions that delight with the richness of flavors and colors. Each of the dishes is carefully thought out, and their complexity makes them appeal to even the most demanding guests. We invite you to taste.",
+
+        "delivery-title": "Delivery to your door",
+
+        "delivery-description": "Orient flavors in your house? It's possible with us! Just call 504 580 580 and we'll take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by yourself. Don't hesitate and call us today. Delicious sushi awaits!",
+
+        "menu-options": {
+            "specials-option": "Specials",
+            "starters-option": "Starters",
+            "soups-option": "Soups",
+            "for-children-option": "For children",
+            "main-dishes-option": "Main dishes",
+            "salads-option": "Salads",
+            "sushi-sets-option": "Sushi sets",
+            "desserts-option": "Desserts",
+            "hot-drinks-option": "Hot drinks",
+            "cold-drinks-option": "Cold drinks",
+            "wines-option": "Wines",
+            "alcohol-option": "Alcohol"
+        },
+
+        "buttons": {
+            "home": "Home",
+            "menu": "Menu",
+            "delivery": "Delivery",
+            "contact": "Contact",
+            "download-menu": "Donwload menu",
+            "show-pricing": "Show pricing"
+        },
+
+        "call-us": "Call us",
+        "restaurant": "Restaurant",
+        "partnership": "Partnership",
+        "write-to-us": "Write to us",
+        "stay-on-top": "Stay on top"
+    },
+
+    "polish": {
+        "welcome-title": "Welcome to the Itamae world",
+
+        "welcome-description": "Immerse yourself in the richness of Asian cuisine flavors that our restaurants offer. Set off on an adventure to the world of Itamae and discover a completely new experience.",
+
+        "menu-description": "Sushi is our specialty. Each roll is made of carefully selected ingredients of the highest quality with attention to the smallest detail, and the experience and precision of our sushimasters translate into the final receipt of the whole. However, our cuisine is not only sushi. Inspired by Asian culture, we have created compositions that delight with the richness of flavors and colors. Each of the dishes is carefully thought out, and their complexity makes them appeal to even the most demanding guests. We invite you to taste.",
+
+        "delivery-title": "Delivery to your door",
+
+        "delivery-description": "Orient flavors in your house? It's possible with us! Just call 504 580 580 and we'll take care of everything. Find our restaurants on the map and check out our delivery pricing. You can also pick your order by yourself. Don't hesitate and call us today. Delicious sushi awaits!",
+
+        "menu-options": {
+            "specials-option": "Specials",
+            "starters-option": "Starters",
+            "soups-option": "Soups",
+            "for-children-option": "For children",
+            "main-dishes-option": "Main dishes",
+            "salads-option": "Salads",
+            "sushi-sets-option": "Sushi sets",
+            "desserts-option": "Desserts",
+            "hot-drinks-option": "Hot drinks",
+            "cold-drinks-option": "Cold drinks",
+            "wines-option": "Wines",
+            "alcohol-option": "Alcohol"
+        },
+
+        "buttons": {
+            "home": "Strona Główna",
+            "menu": "Menu",
+            "delivery": "Dostawa",
+            "contact": "Kontakt",
+            "download-menu": "Donwload menu",
+            "show-pricing": "Show pricing"
+        },
+
+        "call-us": "Call us",
+        "restaurant": "Restaurant",
+        "partnership": "Partnership",
+        "write-to-us": "Write to us",
+        "stay-on-top": "Stay on top"
+    }
+}

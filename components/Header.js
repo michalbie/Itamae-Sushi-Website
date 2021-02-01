@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
+import { LanguageContext } from "./LanguageContext";
 import ScrollIntoView from "react-scroll-into-view";
 
 export default function Header() {
+    const languageContext = useContext(LanguageContext);
     const [topOffset, setTopOffset] = useState(0);
     const headerRef = useRef(null);
 
@@ -33,7 +35,7 @@ export default function Header() {
             </div>
             <ul>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#welcome-section">
-                    <li>Home</li>
+                    <li>{languageContext.buttons["home"]}</li>
                 </ScrollIntoView>
                 <ScrollIntoView className="scroll-view-wrapper" selector="#menu-section">
                     <li>Menu</li>

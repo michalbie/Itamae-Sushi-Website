@@ -11,8 +11,8 @@ export default function ContactSection() {
             <section id="contact-informations-container">
                 <div className="contact-element-container">
                     <h1>Call us</h1>
-                    <h3>Restauracja: 504580500</h3>
-                    <h3>Współpraca: 509820053</h3>
+                    <h3>Restaurant: 504580500</h3>
+                    <h3>Partnership: 509820053</h3>
                 </div>
                 <div className="contact-element-container">
                     <h1>Write to us</h1>

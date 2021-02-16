@@ -1,6 +1,7 @@
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
 import { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const exampleMapStyles = [
     {
@@ -49,14 +50,17 @@ export default function DeliverySection() {
                     {languageContext.languageData.buttons["show-pricing"]}
                 </button>
             </section>
-            <Map
-                isMarkerShown
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.googleKey}`}
-                // containerElement={<div style={{ height: "90%", width: "50%", marginLeft: "3em" }} />}
-                containerElement={<div style={{ height: "95%", width: "50%", padding: "1em" }} />}
-                loadingElement={<div style={{ height: "100%" }} />}
-                mapElement={<div style={{ height: "100%", borderRadius: "5%" }} />}
-            />
+            <ScrollAnimation className="animationWrapper" animateIn="animate__fadeIn">
+                <Map
+                    className="Map"
+                    isMarkerShown
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.googleKey}`}
+                    // containerElement={<div style={{ height: "90%", width: "50%", marginLeft: "3em" }} />}
+                    containerElement={<div style={{ height: "95%", width: "100%", padding: "1em" }} />}
+                    loadingElement={<div style={{ height: "100%" }} />}
+                    mapElement={<div style={{ height: "100%", borderRadius: "5%" }} />}
+                />
+            </ScrollAnimation>
         </section>
     );
 }

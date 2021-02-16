@@ -19,13 +19,15 @@ export default function ContactSection() {
                 </div>
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["write-to-us"]}</h1>
-                    <h3>Email: itamae.bielsko@gmail.com</h3>
+                    <h3>itamae.bielsko@gmail.com</h3>
                 </div>
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["stay-on-top"]}</h1>
-                    <h3>Facebook</h3>
-                    <h3>Instagram</h3>
-                    <h3>TripAdvisor</h3>
+                    <div className="social-media-wrapper">
+                        <img className="social-media-logo" src="/assets/facebook-logo.png"></img>
+                        <img className="social-media-logo" src="/assets/instagram-logo.png"></img>
+                        <img className="social-media-logo" src="/assets/tripadvisor-logo.png"></img>
+                    </div>
                 </div>
             </section>
         </section>

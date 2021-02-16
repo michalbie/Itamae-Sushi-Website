@@ -43,6 +43,43 @@
                 font-size: 1.7em;
                 color: #a72e2e;
             }
+
+            .social-media-wrapper {
+                display: flex;
+                justify-content: center;
+
+                .social-media-logo {
+                    width: 25%;
+                    height: auto;
+                    padding: 0.5em;
+
+                    animation: onLeaveHover 0.3s ease;
+                    @keyframes onLeaveHover {
+                        from {
+                            transform: scale(0.95);
+                        }
+                        to {
+                            transform: scale(1);
+                        }
+                    }
+                }
+
+                .social-media-logo:hover {
+                    cursor: pointer;
+                    animation: onSocialLogoHover;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+
+                    @keyframes onSocialLogoHover {
+                        0% {
+                            transform: scale(1);
+                        }
+                        100% {
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
         }
     }
 }

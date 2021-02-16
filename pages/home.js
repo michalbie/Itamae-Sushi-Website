@@ -29,4 +29,4 @@ export default function Home() {
     );
 }
 
-// TODO: Languages, menu from database, animations, responsiveness
+// TODO: animations, responsiveness

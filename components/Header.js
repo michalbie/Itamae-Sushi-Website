@@ -65,6 +65,10 @@ export default function Header() {
                         <img currentLanguage="polish" id="flag" src="/assets/polish-flag.jpg" />
                     </div>
                 </li>
+
+                <li>
+                    <img id="nav-toggle-btn" src="/assets/nav-btn.png" />
+                </li>
             </ul>
         </header>
     );

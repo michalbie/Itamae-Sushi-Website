@@ -1,0 +1,5 @@
+@mixin w320 {
+    @media (min-width: 320px) {
+        @content;
+    }
+}

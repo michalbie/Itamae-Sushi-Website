@@ -12,7 +12,7 @@ export default function WelcomeSection(props) {
                 <h1 className="h1-title">{languageContext.languageData["welcome-title"]}</h1>
                 <p className="description">{languageContext.languageData["welcome-description"]}</p>
             </div>
-            <ScrollIntoView selector="#menu-section">
+            <ScrollIntoView selector="#menu-section" style={{ position: "relative" }}>
                 <div className="arrow-container">
                     <div className="animate__animated animate__bounce arrow-down"></div>
                 </div>

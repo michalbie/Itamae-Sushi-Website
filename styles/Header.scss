@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 $font-color: #ffffff;
 
 header {
@@ -12,6 +14,10 @@ header {
     position: fixed;
     background-color: rgba($color: #acacac, $alpha: 0.4);
     transition: top 0.5s ease-out;
+
+    @include w320 {
+        font-size: 0.8em;
+    }
 }
 
 ul {
@@ -33,12 +39,26 @@ ul {
         li {
             display: flex;
             align-items: center;
+
+            @include w320 {
+                display: none;
+            }
         }
     }
 
     > li {
         display: flex;
         align-items: center;
+    }
+
+    #nav-toggle-btn {
+        display: none;
+        width: 2em;
+        height: auto;
+
+        @include w320 {
+            display: block;
+        }
     }
 
     #flag-container {

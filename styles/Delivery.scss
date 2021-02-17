@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 $content-padding: 3em;
 
 #delivery-section {
@@ -11,6 +13,10 @@ $content-padding: 3em;
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include w320 {
+        flex-direction: column;
+    }
+
     #delivery-content {
         display: flex;
         justify-content: flex-start;
@@ -18,9 +24,19 @@ $content-padding: 3em;
         padding: $content-padding;
         position: relative;
 
+        @include w320 {
+            width: 100%;
+            padding-bottom: 0;
+        }
+
         h1 {
             font-size: 5em;
             font-family: "Courgette";
+            text-align: center;
+
+            @include w320 {
+                font-size: 5em;
+            }
         }
 
         > p {
@@ -28,6 +44,10 @@ $content-padding: 3em;
             font-size: 1.6em;
             text-align: justify;
             padding-top: 1em;
+
+            @include w320 {
+                font-size: 2em;
+            }
         }
 
         #delivery-section-image {
@@ -37,19 +57,34 @@ $content-padding: 3em;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
             margin-left: -2 * $content-padding;
+
+            @include w320 {
+                margin-top: -20em;
+                opacity: 0.3;
+            }
         }
 
         #delivery-pricing-button {
             margin-top: -9em;
             z-index: 2;
+
+            @include w320 {
+                margin-top: -2em;
+                font-size: 1.75em;
+                padding: 1.5em 5em 1.5em 5em;
+            }
         }
     }
 }
 
 .animationWrapper {
-    height: 100vh;
+    height: 100%;
     width: 50%;
 
     display: flex;
     align-items: center;
+
+    @include w320 {
+        width: 100%;
+    }
 }

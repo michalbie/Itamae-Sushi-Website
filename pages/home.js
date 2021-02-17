@@ -3,7 +3,6 @@ import WelcomeSection from "../components/WelcomeSection";
 import MenuSection from "../components/MenuSection";
 import DeliverySection from "../components/DeliverySection";
 import ContactSection from "../components/ContactSection";
-import { useInView } from "react-intersection-observer";
 import React, { useState, useEffect } from "react";
 import languagesJSON from "../public/language.json";
 import { LanguageContext } from "../components/LanguageContext";

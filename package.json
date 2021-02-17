@@ -17,5 +17,8 @@
         "react-google-maps": "^9.4.5",
         "react-scroll-into-view": "^1.8.2",
         "scss": "^0.2.4"
+    },
+    "devDependencies": {
+        "sass": "^1.32.7"
     }
 }

@@ -28,4 +28,4 @@ export default function Home() {
     );
 }
 
-// TODO: animations, responsiveness
+// TODO: center google maps for mobile (somewhere between two restaurants), add sidebar

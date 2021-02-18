@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Home from "./home.js";
 
-//import LocationSection from "../content/location/LocationSection";
-
 export default function Main() {
     return (
         <>
+            <Head>
+                <title>Itamae Sushi</title>
+                {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
+            </Head>
             <Home></Home>
         </>
     );

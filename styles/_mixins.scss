@@ -1,18 +1,36 @@
 @mixin w320 {
-    @media (min-width: 320px) {
+    @media (min-width: 320px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin w320H {
+    @media (min-width: 320px) and (orientation: landscape) {
         @content;
     }
 }
 
 @mixin w530 {
-    @media (min-width: 530px) {
+    @media (min-width: 530px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin w530H {
+    @media (min-width: 530px) and (orientation: landscape) {
         @content;
     }
 }
 
 @mixin w768 {
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (orientation: portrait) {
         //and (max-width: 1024px)
+        @content;
+    }
+}
+
+@mixin w768H {
+    @media (min-width: 530px) and (orientation: landscape) {
         @content;
     }
 }

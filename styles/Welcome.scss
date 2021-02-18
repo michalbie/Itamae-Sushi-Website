@@ -1,6 +1,6 @@
 @import "./mixins.scss";
 
-section {
+.main-section {
     position: relative;
     height: 100vh;
     max-width: 100vw; //sus
@@ -71,6 +71,11 @@ section {
     }
 }
 
+.arrow-scroll-wrapper {
+    position: absolute;
+    bottom: 2em;
+}
+
 .arrow-container {
     width: 4em;
     height: 4em;
@@ -79,7 +84,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5em;
+    //padding-top: 5em;
 }
 
 .arrow-container:hover {

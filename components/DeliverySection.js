@@ -41,7 +41,7 @@ export default function DeliverySection() {
     const languageContext = useContext(LanguageContext);
 
     return (
-        <section id="delivery-section">
+        <section className="main-section" id="delivery-section">
             <section id="delivery-content">
                 <h1>{languageContext.languageData["delivery-title"]}</h1>
                 <p>{languageContext.languageData["delivery-description"]}</p>

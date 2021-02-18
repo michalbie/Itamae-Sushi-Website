@@ -16,7 +16,6 @@
     }
 
     @include w320 {
-        font-size: 1em;
         flex-direction: column-reverse;
         padding-top: 1em;
     }

@@ -7,7 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function MenuSection() {
     const languageContext = useContext(LanguageContext);
     return (
-        <section id="menu-section">
+        <section className="main-section" id="menu-section">
             <ScrollAnimation className="animationWrapper" animateIn="animate__fadeIn">
                 <section id="menu-options-container">
                     <MenuOption name={languageContext.languageData["menu-options"]["specials"]} source="/assets/menu-options/specials.jpg" />

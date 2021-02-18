@@ -23,6 +23,7 @@ $content-padding: 3em;
         width: 50%;
         padding: $content-padding;
         position: relative;
+        flex-direction: column;
 
         @include w320 {
             width: 100%;
@@ -35,7 +36,7 @@ $content-padding: 3em;
             text-align: center;
 
             @include w320 {
-                font-size: 5em;
+                font-size: 4em;
             }
         }
 
@@ -46,7 +47,7 @@ $content-padding: 3em;
             padding-top: 1em;
 
             @include w320 {
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
 
@@ -59,8 +60,9 @@ $content-padding: 3em;
             margin-left: -2 * $content-padding;
 
             @include w320 {
-                margin-top: -20em;
-                opacity: 0.3;
+                /*margin-top: -20em;
+                opacity: 0.3;*/
+                display: none;
             }
         }
 
@@ -69,9 +71,9 @@ $content-padding: 3em;
             z-index: 2;
 
             @include w320 {
-                margin-top: -2em;
-                font-size: 1.75em;
-                padding: 1.5em 5em 1.5em 5em;
+                margin-top: 1em;
+                font-size: 1.2em;
+                padding: 1em 3em 1em 3em;
             }
         }
     }

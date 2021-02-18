@@ -5,7 +5,7 @@ export default function ContactSection() {
     const languageContext = useContext(LanguageContext);
 
     return (
-        <section id="contact-section">
+        <section className="main-section" id="contact-section">
             <section id="logo-section">
                 <div id="contact-logo-container">
                     <img id="contact-logo" src="assets/big-logo.png" />

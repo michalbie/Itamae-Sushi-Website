@@ -19,6 +19,10 @@ header {
         font-size: 0.8em;
     }
 
+    @include w530H {
+        font-size: 0.6em;
+    }
+
     @include w1024 {
         font-size: 1em;
     }
@@ -48,7 +52,7 @@ ul {
                 display: none;
             }
 
-            @include w768 {
+            @include w768H {
                 display: flex;
             }
         }
@@ -60,7 +64,7 @@ ul {
     }
 
     #nav-toggle-wrapper {
-        @include w768 {
+        @include w768H {
             display: none;
         }
     }
@@ -74,7 +78,7 @@ ul {
             display: block;
         }
 
-        @include w768 {
+        @include w768H {
             display: none;
         }
     }

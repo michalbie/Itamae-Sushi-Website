@@ -17,6 +17,10 @@ $content-padding: 3em;
         flex-direction: column;
     }
 
+    @include w530H {
+        flex-direction: row;
+    }
+
     @include w1024 {
         flex-direction: row;
     }
@@ -36,7 +40,7 @@ $content-padding: 3em;
         }
 
         @include w1024 {
-            width: 50%;
+            width: 100%;
         }
 
         @include w1630 {
@@ -51,6 +55,14 @@ $content-padding: 3em;
             @include w320 {
                 font-size: 4em;
             }
+
+            @include w530H {
+                font-size: 3em;
+            }
+
+            @include w768H {
+                font-size: 4em;
+            }
         }
 
         > p {
@@ -61,6 +73,22 @@ $content-padding: 3em;
 
             @include w320 {
                 font-size: 1.5em;
+            }
+
+            @include w768H {
+                font-size: 2em;
+            }
+
+            @include w1024 {
+                font-size: 1.6em;
+            }
+
+            @include w1630 {
+                font-size: 1.7em;
+            }
+
+            @include w1920 {
+                font-size: 2em;
             }
         }
 
@@ -89,6 +117,11 @@ $content-padding: 3em;
                 margin-top: 1em;
                 font-size: 1.2em;
                 padding: 1.5em 5em 1.5em 5em;
+            }
+
+            @include w530H {
+                padding: 1em 3em 1em 3em;
+                margin-bottom: 3em;
             }
 
             @include w1630 {

@@ -15,6 +15,10 @@
         font-size: 1.2em;
     }
 
+    @include w530H {
+        font-size: 1em;
+    }
+
     @include w1024 {
         padding-top: 3em;
     }
@@ -33,8 +37,12 @@
             flex-grow: 0;
         }
 
+        @include w530H {
+            padding-top: 6em;
+        }
+
         @include w1024 {
-            padding-top: 10em;
+            padding-top: 7em;
         }
 
         #contact-logo-container {
@@ -48,8 +56,20 @@
                 width: 7em;
             }
 
+            @include w530H {
+                width: 5em;
+            }
+
+            @include w768H {
+                width: 6em;
+            }
+
             @include w1024 {
-                width: 9em;
+                width: 8em;
+            }
+
+            @include w1630 {
+                width: 12em;
             }
 
             #contact-logo {
@@ -69,15 +89,31 @@
         padding-top: 5em;
 
         @include w320 {
-            font-size: 0.8em;
+            font-size: 0.7em;
             flex-direction: column;
             align-items: center;
             padding-top: 8em;
             height: 50%;
         }
 
+        @include w530H {
+            font-size: 0.6em;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        @include w768H {
+            font-size: 0.7em;
+        }
+
         @include w1024 {
             flex-direction: row;
+            font-size: 0.9em;
+        }
+
+        @include w1630 {
+            font-size: 1em;
+            padding-top: 14em;
         }
 
         .contact-element-container {

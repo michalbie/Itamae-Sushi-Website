@@ -5,14 +5,25 @@
 }
 
 @mixin w530 {
-    @media (min-width: 530px) {
+    @media (min-width: 530px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin w530H {
+    @media (min-width: 530px) and (orientation: landscape) {
         @content;
     }
 }
 
 @mixin w768 {
-    @media (min-width: 768px) {
-        //and (max-width: 1024px)
+    @media (min-width: 768px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin w768H {
+    @media (min-width: 768px) and (orientation: landscape) {
         @content;
     }
 }
@@ -25,6 +36,12 @@
 
 @mixin w1630 {
     @media (min-width: 1630px) {
+        @content;
+    }
+}
+
+@mixin w1920 {
+    @media (min-width: 1920px) {
         @content;
     }
 }

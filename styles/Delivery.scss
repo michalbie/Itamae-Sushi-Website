@@ -17,9 +17,14 @@ $content-padding: 3em;
         flex-direction: column;
     }
 
+    @include w1024 {
+        flex-direction: row;
+    }
+
     #delivery-content {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex;
+        align-items: center;
         width: 50%;
         padding: $content-padding;
         position: relative;
@@ -28,6 +33,14 @@ $content-padding: 3em;
         @include w320 {
             width: 100%;
             padding-bottom: 0;
+        }
+
+        @include w1024 {
+            width: 50%;
+        }
+
+        @include w1630 {
+            width: 100%;
         }
 
         h1 {
@@ -58,22 +71,28 @@ $content-padding: 3em;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
             margin-left: -2 * $content-padding;
+            opacity: 0.9;
 
             @include w320 {
-                /*margin-top: -20em;
-                opacity: 0.3;*/
                 display: none;
+            }
+
+            @include w1630 {
+                display: block;
             }
         }
 
         #delivery-pricing-button {
-            margin-top: -9em;
             z-index: 2;
 
             @include w320 {
                 margin-top: 1em;
                 font-size: 1.2em;
-                padding: 1em 3em 1em 3em;
+                padding: 1.5em 5em 1.5em 5em;
+            }
+
+            @include w1630 {
+                margin-top: -9em;
             }
         }
     }

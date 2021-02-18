@@ -66,7 +66,7 @@ export default function Header() {
                     </div>
                 </li>
 
-                <li>
+                <li id="nav-toggle-wrapper">
                     <img id="nav-toggle-btn" src="/assets/nav-btn.png" />
                 </li>
             </ul>

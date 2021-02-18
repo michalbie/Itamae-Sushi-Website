@@ -18,6 +18,10 @@ header {
     @include w320 {
         font-size: 0.8em;
     }
+
+    @include w1024 {
+        font-size: 1em;
+    }
 }
 
 ul {
@@ -43,12 +47,22 @@ ul {
             @include w320 {
                 display: none;
             }
+
+            @include w768 {
+                display: flex;
+            }
         }
     }
 
     > li {
         display: flex;
         align-items: center;
+    }
+
+    #nav-toggle-wrapper {
+        @include w768 {
+            display: none;
+        }
     }
 
     #nav-toggle-btn {
@@ -58,6 +72,10 @@ ul {
 
         @include w320 {
             display: block;
+        }
+
+        @include w768 {
+            display: none;
         }
     }
 

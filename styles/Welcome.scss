@@ -13,6 +13,14 @@
     @include w320 {
         font-size: 0.7em;
     }
+
+    @include w530 {
+        font-size: 0.8em;
+    }
+
+    @include w1024 {
+        font-size: 1em;
+    }
 }
 
 #welcome-title-background {

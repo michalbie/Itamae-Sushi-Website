@@ -3,3 +3,28 @@
         @content;
     }
 }
+
+@mixin w530 {
+    @media (min-width: 530px) {
+        @content;
+    }
+}
+
+@mixin w768 {
+    @media (min-width: 768px) {
+        //and (max-width: 1024px)
+        @content;
+    }
+}
+
+@mixin w1024 {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin w1630 {
+    @media (min-width: 1630px) {
+        @content;
+    }
+}

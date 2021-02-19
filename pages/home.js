@@ -28,4 +28,4 @@ export default function Home() {
     );
 }
 
-// TODO: center google maps for mobile (somewhere between two restaurants), add sidebar
+// TODO: center google maps for mobile (somewhere between two restaurants), add sidebar, add colors for paragraphs(messenger doesnt inherits)

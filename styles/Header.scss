@@ -4,23 +4,25 @@ $font-color: #ffffff;
 
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    justify-content: space-between;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     z-index: 10;
     width: 100%;
+    height: auto;
     position: fixed;
     background-color: rgba($color: #acacac, $alpha: 0.4);
-    transition: top 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    transition-duration: 0.5s;
+    //transition: height 0.5s ease-out;
 
     @include w320 {
         font-size: 0.8em;
     }
 
     @include w530H {
-        font-size: 0.6em;
+        //@include: 0.6em;
     }
 
     @include w1024 {
@@ -28,88 +30,138 @@ header {
     }
 }
 
-ul {
+#header-content-top {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    color: $font-color;
-    font-size: 1.1em;
-    margin-right: 0.5em;
-    font-family: "Courgette";
+    justify-content: space-between;
 
-    .scroll-view-wrapper {
-        padding: 0em 0.5em 0em 0.5em;
-        height: 60%;
+    ul {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        list-style-type: none;
+        color: $font-color;
+        font-size: 1.1em;
+        margin-right: 0.5em;
+        font-family: "Courgette";
 
-        li {
+        .header-nav {
             display: flex;
-            align-items: center;
+            flex-direction: row;
 
             @include w320 {
-                display: none;
+                flex-direction: column;
             }
 
             @include w768H {
+                flex-direction: row;
+            }
+
+            .scroll-view-wrapper {
+                padding: 0.5em 1em 0.5em 1em;
+                height: 60%;
                 display: flex;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    @include w320 {
+                        display: none;
+                    }
+
+                    @include w768H {
+                        display: flex;
+                    }
+                }
             }
         }
-    }
 
-    > li {
-        display: flex;
-        align-items: center;
-    }
+        > li {
+            display: flex;
+            align-items: center;
+            padding: 0em 1em 0em 1em;
+            height: 60% !important;
+        }
 
-    #nav-toggle-wrapper {
-        @include w768H {
+        #nav-toggle-wrapper {
+            @include w768H {
+                display: none;
+            }
+        }
+
+        #nav-toggle-btn {
             display: none;
-        }
-    }
-
-    #nav-toggle-btn {
-        display: none;
-        width: 2em;
-        height: auto;
-
-        @include w320 {
-            display: block;
-        }
-
-        @include w768H {
-            display: none;
-        }
-    }
-
-    #flag-container {
-        display: flex;
-        align-items: center;
-        img {
             width: 2em;
             height: auto;
+
+            @include w320 {
+                display: block;
+            }
+
+            @include w768H {
+                display: none;
+            }
         }
 
-        img:hover {
+        #nav-toggle-btn:hover {
             cursor: pointer;
-            transform: scale(0.95);
+        }
+
+        #flag-container {
+            display: flex;
+            align-items: center;
+            img {
+                width: 2em;
+                height: auto;
+            }
+
+            img:hover {
+                cursor: pointer;
+                transform: scale(0.95);
+            }
         }
     }
+}
+#header-content-extended {
+    display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-top: 1em;
+    width: 100%;
 
-    .scroll-view-wrapper:hover {
-        cursor: pointer;
-        animation: hoverButton ease 0.5s;
-        animation-fill-mode: forwards;
+    @include w768H {
+        display: none !important;
+    }
 
-        @keyframes hoverButton {
-            0% {
-                background-color: transparent;
-                border-radius: 0px;
-            }
-            100% {
-                background-color: rgba($color: #ffffff, $alpha: 0.1);
-                border-radius: 2em;
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        .scroll-view-wrapper {
+            display: flex;
+            align-items: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 0.5em;
+
+                @include w320 {
+                    display: flex;
+                }
+
+                @include w768H {
+                    display: none;
+                }
             }
         }
     }
@@ -141,9 +193,25 @@ ul {
     }
 }
 
-li {
+.scroll-view-wrapper:hover {
+    cursor: pointer;
+    animation: hoverButton ease 0.5s;
+    animation-fill-mode: forwards;
+
+    @keyframes hoverButton {
+        0% {
+            background-color: transparent;
+            border-radius: 0px;
+        }
+        100% {
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+            border-radius: 2em;
+        }
+    }
+}
+/*li {
     padding: 0em 1em 0em 1em;
     height: 60% !important;
     display: flex;
     align-items: center;
-}
+}*/

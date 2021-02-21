@@ -34,7 +34,7 @@ export default function DeliverySection() {
                 <Map
                     className="Map"
                     //isMarkerShown
-                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.googleKey}`}
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.NEXT_GOOGLE_API_KEY}`}
                     containerElement={<div style={{ height: "95%", width: "100%", padding: "1em" }} />}
                     loadingElement={<div style={{ height: "100%" }} />}
                     mapElement={<div style={{ height: "100%", borderRadius: "5%" }} />}

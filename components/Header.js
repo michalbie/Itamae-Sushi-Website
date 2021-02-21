@@ -27,7 +27,6 @@ export default function Header() {
     };
 
     const switchLanguages = () => {
-        console.log(document.getElementById("flag").currentLanguage);
         if (document.getElementById("flag").currentLanguage == "polish") {
             document.getElementById("flag").currentLanguage = "english";
             document.getElementById("flag").src = "/assets/english-flag.jpg";
@@ -88,7 +87,7 @@ export default function Header() {
     };
 
     useEffect(() => {
-        document.getElementById("flag").currentLanguage = "polish";
+        document.getElementById("flag").currentLanguage = "english";
         addHeaderBehaviour();
     }, []);
 
@@ -103,7 +102,7 @@ export default function Header() {
                     <HeaderNav id="top-nav"></HeaderNav>
                     <li>
                         <div id="flag-container" onClick={switchLanguages}>
-                            <img currentLanguage="polish" id="flag" src="/assets/polish-flag.jpg" />
+                            <img currentLanguage="english" id="flag" src="/assets/english-flag.jpg" />
                         </div>
                     </li>
                     <li id="nav-toggle-wrapper" onClick={toggleNavbar}>

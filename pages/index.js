@@ -6,7 +6,10 @@ export default function Main() {
         <>
             <Head>
                 <title>Itamae Sushi</title>
-                {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <meta name="author" content="Michał Biernacki"></meta>
+                <meta name="keywords" content="sushi, website, proposition"></meta>
+                <meta name="description" content="Sushi website proposition made by Michał Biernacki"></meta>
             </Head>
             <Home></Home>
         </>

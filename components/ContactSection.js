@@ -15,12 +15,12 @@ export default function ContactSection() {
             <section id="contact-informations-container">
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["call-us"]}</h1>
-                    <h3>{languageContext.languageData["restaurant"]}: 504580500</h3>
-                    <h3>{languageContext.languageData["partnership"]}: 509820053</h3>
+                    <h3>{languageContext.languageData["restaurant"]}: 123123123</h3>
+                    <h3>{languageContext.languageData["partnership"]}: 234234234</h3>
                 </div>
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["write-to-us"]}</h1>
-                    <h3>itamae.bielsko@gmail.com</h3>
+                    <h3>biernackimichal022@gmail.com</h3>
                 </div>
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["stay-on-top"]}</h1>

@@ -8,7 +8,7 @@ import languagesJSON from "../public/language.json";
 import { LanguageContext } from "../components/LanguageContext";
 
 export default function Home() {
-    const [language, setLanguage] = useState("polish");
+    const [language, setLanguage] = useState("english");
     const [languageData, setLanguageData] = useState(languagesJSON[language]);
 
     useEffect(() => {

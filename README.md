@@ -5,10 +5,10 @@
 </p>
 
 ## About
-Website proposition for sushi restaurants made in Next.js. Check out live: https://sushi-website.vercel.app
+Fully responsive website proposition for sushi restaurant made in Next.js. Check out live: https://sushi-website.vercel.app
 
 ## Screenshots
-Some screenshots from website. Check out live to see whole page: https://sushi-website.vercel.app
+Some screenshots from website. Check out live to see whole page.
 ![Welcome page](public/screenshots/welcome-page.png "Welcome page")
 ![Menu page](public/screenshots/menu-page.png "Menu page")
 ![Welcome page](public/screenshots/welcome-page-mobile.png "Welcome page") ![Menu page](public/screenshots/menu-page-mobile.png "Menu page")

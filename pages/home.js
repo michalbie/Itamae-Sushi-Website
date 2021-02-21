@@ -28,4 +28,4 @@ export default function Home() {
     );
 }
 
-// TODO:  add sidebar, add colors for paragraphs(messenger doesnt inherits)
+// TODO: favicon, highlight number

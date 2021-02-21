@@ -176,20 +176,19 @@ header {
 
     #logo-img {
         position: relative;
-        width: 8em;
-        margin-left: -1.5em;
+        width: 3.5em;
         height: auto;
     }
 
     #logo-title {
         position: absolute;
-        font-family: "Noto Sans TC";
-        font-size: 1.2em;
+        font-family: "Kaushan Script", cursive;
+        font-size: 1.4em;
         width: 6em;
         height: auto;
         color: $font-color;
         letter-spacing: 0.2em;
-        left: 4em;
+        left: 3em;
     }
 }
 

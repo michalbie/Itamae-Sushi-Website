@@ -49,7 +49,8 @@ $content-padding: 3em;
 
         h1 {
             font-size: 5em;
-            font-family: "Courgette";
+            //font-family: "Courgette";
+            font-family: "Kaushan Script", cursive;
             text-align: center;
 
             @include w320 {

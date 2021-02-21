@@ -40,7 +40,6 @@ export default function Header() {
     };
 
     const hideNavbar = () => {
-        console.log("hide");
         const header = document.querySelector("header");
         setIsHeaderExtended("Pending");
         header.style.height = parseInt(originalHeight) + "px";

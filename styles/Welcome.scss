@@ -63,7 +63,8 @@
     .h1-title {
         color: #dddddd;
         font-size: 5em;
-        font-family: "Courgette";
+        //font-family: "Courgette";
+        font-family: "Kaushan Script", cursive;
         text-align: center;
 
         @include w320 {

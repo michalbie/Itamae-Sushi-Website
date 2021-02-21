@@ -1,0 +1,39 @@
+@import "./mixins.scss";
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    //background-color: #222222;
+    background-color: rgba(34, 34, 34, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    @include w320 {
+        font-size: 0.6em;
+    }
+
+    @include w530H {
+        font-size: 0.8em;
+    }
+    @include w530 {
+        font-size: 0.8em;
+    }
+
+    @include w1024 {
+        font-size: 1em;
+    }
+    @include w1630 {
+        font-size: 1.2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #a72e2e;
+    }
+}

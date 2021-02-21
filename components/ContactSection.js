@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
+import { Footer } from "./Footer";
 
 export default function ContactSection() {
     const languageContext = useContext(LanguageContext);
@@ -30,6 +31,7 @@ export default function ContactSection() {
                     </div>
                 </div>
             </section>
+            <Footer></Footer>
         </section>
     );
 }

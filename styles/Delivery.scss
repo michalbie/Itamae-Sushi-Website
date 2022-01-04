@@ -112,6 +112,25 @@ $content-padding: 3em;
             }
         }
 
+        #delivery-section-image-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: -18em;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            margin-left: -2 * $content-padding;
+            opacity: 0.9;
+
+            @include w320 {
+                display: none;
+            }
+
+            @include w1630 {
+                display: block;
+            }
+        }
+
         #delivery-pricing-button {
             z-index: 2;
 
@@ -127,7 +146,7 @@ $content-padding: 3em;
             }
 
             @include w1630 {
-                margin-top: -9em;
+                margin-top: -17em;
             }
         }
     }

@@ -6,6 +6,7 @@ export default function MenuOption(props) {
         <div className="menu-option">
             <h2>{props.name}</h2>
             <Image src={props.source} layout="fill" objectFit="cover" />
+            {/* <img src={props.source}/> */}
         </div>
     );
 }

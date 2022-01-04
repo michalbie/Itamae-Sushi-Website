@@ -30,7 +30,6 @@ export default function DeliverySection() {
                 <p>{languageContext.languageData["delivery-description"]}</p>
                 {/* <img id="delivery-section-image" src="assets/delivery-img.webp" /> */}
                 <div id="delivery-section-image-container">
-                    {/* style={{ width: "100%", height: "100%", position: "relative" }} */}
                     <Image src="/assets/delivery-img.webp" width="100%" height="100%" layout="responsive" objectFit="contain" />
                 </div>
                 <button className="big-button" id="delivery-pricing-button">

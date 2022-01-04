@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 export default function MenuOption(props) {
     return (
         <div className="menu-option">
             <h2>{props.name}</h2>
-            <img src={props.source}></img>
+            <Image src={props.source} layout="fill" objectFit="cover" />
         </div>
     );
 }

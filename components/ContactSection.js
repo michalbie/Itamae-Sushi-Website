@@ -1,15 +1,18 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import { Footer } from "./Footer";
+import Image from "next/image";
 
 export default function ContactSection() {
     const languageContext = useContext(LanguageContext);
 
     return (
         <section className="main-section" id="contact-section">
+            <div className="cover-fadeOpacity-dark"></div>
+            <Image src="/assets/contact-background.webp" objectFit="cover" layout="fill" priority />
             <section id="logo-section">
                 <div id="contact-logo-container">
-                    <img id="contact-logo" src="assets/big-logo.png" />
+                    <img id="contact-logo" src="assets/big-logo.webp" />
                 </div>
             </section>
             <section id="contact-informations-container">
@@ -25,9 +28,9 @@ export default function ContactSection() {
                 <div className="contact-element-container">
                     <h1>{languageContext.languageData["stay-on-top"]}</h1>
                     <div className="social-media-wrapper">
-                        <img className="social-media-logo" src="/assets/facebook-logo.png"></img>
-                        <img className="social-media-logo" src="/assets/instagram-logo.png"></img>
-                        <img className="social-media-logo" src="/assets/tripadvisor-logo.png"></img>
+                        <img className="social-media-logo" src="/assets/facebook-logo.webp"></img>
+                        <img className="social-media-logo" src="/assets/instagram-logo.webp"></img>
+                        <img className="social-media-logo" src="/assets/tripadvisor-logo.webp"></img>
                     </div>
                 </div>
             </section>

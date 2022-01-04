@@ -13,6 +13,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     color: white;
+    z-index: 2;
 
     @include w320 {
         font-size: 0.6em;

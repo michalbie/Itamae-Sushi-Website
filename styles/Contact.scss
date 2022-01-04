@@ -2,9 +2,9 @@
 
 #contact-section {
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1)), url("/assets/contact-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1)), url("/assets/contact-background.webp");
+    // background-size: cover;
+    // background-repeat: no-repeat;
     justify-content: space-between;
 
     @include w320 {
@@ -30,6 +30,7 @@
         padding-top: 10em;
         display: flex;
         justify-content: center;
+        z-index: 2;
 
         @include w320 {
             padding-top: 3.5em;
@@ -58,6 +59,7 @@
             height: auto;
             display: flex;
             align-items: flex-end;
+            z-index: 2;
 
             @include w320 {
                 align-items: flex-start;
@@ -99,6 +101,7 @@
         align-items: flex-start;
         justify-content: center;
         color: white;
+        z-index: 2;
 
         @include w320 {
             font-size: 0.7em;
@@ -188,4 +191,13 @@
             }
         }
     }
+}
+
+.cover-fadeOpacity-dark {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
+    top: 0;
 }

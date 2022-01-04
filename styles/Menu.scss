@@ -3,9 +3,9 @@
 #menu-section {
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("/assets/menu-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("/assets/menu-background.webp");
+    // background-size: cover;
+    // background-repeat: no-repeat;
 
     .animationWrapper {
         width: 50%;
@@ -43,6 +43,7 @@
     justify-content: flex-start;
     gap: 1em;
     overflow-x: hidden;
+    z-index: 2;
 
     @include w320 {
         display: flex;
@@ -56,15 +57,16 @@
     @include w530H {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 33vw;
-        padding-top: 15vw;
+        // row-gap: 33vw;
+        padding-top: 2vw;
+        overflow-x: hidden;
     }
 
     @include w768H {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 14vw;
-        padding-top: 7vw;
+        // row-gap: 14vw;
+        padding-top: 2vw;
     }
 
     @include w1024 {
@@ -153,6 +155,7 @@
     padding-top: 7em;
     padding-left: 4em;
     padding-right: 4em;
+    z-index: 3;
 
     @include w320 {
         width: 100%;
@@ -246,4 +249,13 @@
             transform: scale(0.95);
         }
     }
+}
+
+.cover-fadeOpacity {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    top: 0;
 }

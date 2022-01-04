@@ -2,6 +2,7 @@ import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-map
 import { useContext } from "react";
 import { LanguageContext } from "./LanguageContext";
 import ScrollAnimation from "react-animate-on-scroll";
+import Image from "next/image";
 
 const Map = withScriptjs(
     withGoogleMap((props) => (
@@ -22,10 +23,12 @@ export default function DeliverySection() {
 
     return (
         <section className="main-section" id="delivery-section">
+            <div className="cover-fadeOpacity-reverse"></div>
+            <Image src="/assets/delivery-background.webp" objectFit="cover" layout="fill" priority />
             <section id="delivery-content">
                 <h1>{languageContext.languageData["delivery-title"]}</h1>
                 <p>{languageContext.languageData["delivery-description"]}</p>
-                <img id="delivery-section-image" src="assets/delivery-img.png" />
+                <img id="delivery-section-image" src="assets/delivery-img.webp" />
                 <button className="big-button" id="delivery-pricing-button">
                     {languageContext.languageData.buttons["show-pricing"]}
                 </button>
@@ -35,7 +38,7 @@ export default function DeliverySection() {
                     className="Map"
                     //isMarkerShown
                     googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.NEXT_GOOGLE_API_KEY}`}
-                    containerElement={<div style={{ height: "95%", width: "100%", padding: "1em" }} />}
+                    containerElement={<div style={{ height: "95%", width: "100%", padding: "1em", zIndex: "2" }} />}
                     loadingElement={<div style={{ height: "100%" }} />}
                     mapElement={<div style={{ height: "100%", borderRadius: "5%" }} />}
                 />

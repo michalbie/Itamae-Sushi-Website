@@ -29,11 +29,11 @@ export default function Header() {
     const switchLanguages = () => {
         if (document.getElementById("flag").currentLanguage == "polish") {
             document.getElementById("flag").currentLanguage = "english";
-            document.getElementById("flag").src = "/assets/english-flag.jpg";
+            document.getElementById("flag").src = "/assets/english-flag.webp";
             languageContext.setLanguage("english");
         } else {
             document.getElementById("flag").currentLanguage = "polish";
-            document.getElementById("flag").src = "/assets/polish-flag.jpg";
+            document.getElementById("flag").src = "/assets/polish-flag.webp";
             languageContext.setLanguage("polish");
         }
     };
@@ -95,18 +95,18 @@ export default function Header() {
         <header ref={headerRef} style={{ top: topOffset + "px" }}>
             <section id="header-content-top">
                 <div id="logo-section">
-                    <img id="logo-img" src={"/assets/logo.png"} />
+                    <img id="logo-img" src={"/assets/logo.webp"} />
                     <h2 id="logo-title">ITAMAE</h2>
                 </div>
                 <ul>
                     <HeaderNav id="top-nav"></HeaderNav>
                     <li>
                         <div id="flag-container" onClick={switchLanguages}>
-                            <img currentLanguage="english" id="flag" src="/assets/english-flag.jpg" />
+                            <img currentLanguage="english" id="flag" src="/assets/english-flag.webp" />
                         </div>
                     </li>
                     <li id="nav-toggle-wrapper" onClick={toggleNavbar}>
-                        <img id="nav-toggle-btn" src="/assets/nav-btn.png" />
+                        <img id="nav-toggle-btn" src="/assets/nav-btn.webp" />
                     </li>
                 </ul>
             </section>

@@ -28,7 +28,7 @@ export default function DeliverySection() {
             <section id="delivery-content">
                 <h1>{languageContext.languageData["delivery-title"]}</h1>
                 <p>{languageContext.languageData["delivery-description"]}</p>
-                <img id="delivery-section-image" src="assets/delivery-img.webp" />
+                <img id="delivery-section-image" src="assets/delivery-img.png" />
                 <button className="big-button" id="delivery-pricing-button">
                     {languageContext.languageData.buttons["show-pricing"]}
                 </button>

@@ -24,4 +24,6 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
+//Author: Michał Biernacki
+
 export default MyApp;
